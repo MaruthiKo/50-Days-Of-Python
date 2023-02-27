@@ -1,18 +1,9 @@
-# def username(mail):
-#     s = ""
-#     i = 0
-#     while mail[i]
+def get_username(mail):
+    s = ""
+    char = 0
+    while mail[char] != '@':
+        s += mail[char]
+        char += 1
+    return s
 
-
-# for i in l:
-#     print(i,end=" ")
-
-n = input("")
-l = []
-for i in range(len(n)):
-    if n[i] == '@':
-        break
-    l.append(n[i])
-
-for i in l:
-    print(i, end="")
+print(get_username('ben@gmail.com'))
